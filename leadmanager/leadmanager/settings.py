@@ -132,5 +132,5 @@ USE_TZ = True
 
 #STATIC_URL = '/frontend/static/'
 #PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(BASE_DIR, '/frontend/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
