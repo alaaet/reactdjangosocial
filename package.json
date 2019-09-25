@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js"
+    "build": "webpack --mode production ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js",
+    "postinstall": "npm run build"
+  },
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.10.0"
   },
   "keywords": [],
   "author": "",

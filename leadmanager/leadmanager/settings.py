@@ -25,7 +25,7 @@ SECRET_KEY = '=wk$-gn-4ptfvl!q!e^l#g^x)vr9$1rh67*womj(6n((5puzbh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['react-django.herokuapp.com', '127.0.0.1:8000']
 
 
 # Application definition
@@ -130,6 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/frontend/static/'
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+#STATIC_URL = '/frontend/static/'
+#PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, '/frontend/static')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
